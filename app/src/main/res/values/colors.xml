@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fb1664</color>
+    <color name="colorPrimaryDark">#D31353</color>
+    <color name="colorAccent">#4CAF50</color>
+
+    <color name="colorAdminPrimary">#166EB4</color>
+    <color name="colorAdminPrimaryDark">#0A5692</color>
+    <color name="colorAdminAccent">#FF5722</color>
+
+
+    <color name="colorRegistration">#FC4E89</color>
+    <color name="colorLogin">#fc4e89</color>
+    <color name="colorField">#2D297EC0</color>
+    <color name="editTextColor">#000000</color>
+    <color name="textColor">#000000</color>
+    <color name="btnTextColor">#FFFFFF</color>
+    <color name="pendingVerificationColor">#FFEB3B</color>
+
+
+
+
+</resources>

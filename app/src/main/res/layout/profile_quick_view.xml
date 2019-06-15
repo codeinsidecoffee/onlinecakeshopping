@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/viewSingleuserProfile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="10dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="45dp"
+    android:layout_margin="10dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/currentUserProfile"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/app_icon"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:id="@+id/txtusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:text="UserName Display Here"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAdminAccent"
+                    android:textSize="@dimen/textbox_size"
+                    android:textAlignment="center"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="Email :"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/textbox_size" />
+                    <TextView
+                        android:id="@+id/txtuseremail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="Email@email.com"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textbox_size" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="Mobile :"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/textbox_size" />
+                    <TextView
+                        android:id="@+id/txtusermobile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="999999999"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textbox_size" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="Address :"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/textbox_size" />
+                    <TextView
+                        android:id="@+id/txtuseraddress"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="adress, near Adrees"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textbox_size" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="Country :"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/textbox_size" />
+                    <TextView
+                        android:id="@+id/txtusercountry"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="INDIA"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textbox_size" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="State :"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/textbox_size" />
+                    <TextView
+                        android:id="@+id/txtuserstate"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="GUJARAT"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textbox_size" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="City :"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/textbox_size" />
+                    <TextView
+                        android:id="@+id/txtusercity"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="Surat"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textbox_size" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="PinCode :"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/textbox_size" />
+                    <TextView
+                        android:id="@+id/txtuserpincode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="396310"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textbox_size" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="lastvisit :"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorPrimaryDark"
+                        android:textSize="@dimen/textbox_size" />
+                    <TextView
+                        android:id="@+id/txtuserlastvisit"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7"
+                        android:layout_margin="5dp"
+                        android:padding="10dp"
+                        android:text="30-APR-2019"
+                        android:textColor="@color/textColor"
+                        android:textSize="@dimen/textbox_size" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

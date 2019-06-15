@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/managesingleproduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="10dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="45dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:id="@+id/imgnewproduct"
+                        android:layout_width="0dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="0.4"
+                        android:src="@mipmap/ic_launcher_round"
+                        android:layout_margin="10dp"/>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6"
+                        android:orientation="vertical">
+                        <EditText
+                            android:id="@+id/edtProductName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:layout_margin="5dp"
+                            android:textStyle="bold"
+                            android:textAlignment="center"
+                            android:text="Product Title"
+                            android:textColor="?attr/colorPrimaryDark"
+                            android:textSize="@dimen/product_title_size"
+                            />
+                        <Spinner
+                            android:id="@+id/spinnerprotype"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/colorPrimary"
+                            android:textSize="@dimen/edit_text_size"
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                        <EditText
+                            android:id="@+id/edtRate"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:layout_weight="0.6"
+                            android:textAlignment="center"
+                            android:text="250"
+                            android:textColor="?attr/colorAccent"
+                            android:textSize="@dimen/product_title_size"
+                            android:inputType="numberDecimal"
+                            />
+                            <TextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.4"
+                                android:textStyle="bold"
+                                android:text="RS /-"
+                                android:textColor="?attr/colorAccent"
+                                android:textSize="@dimen/product_title_size"
+                                android:inputType="numberDecimal"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+                    <Spinner
+                        android:id="@+id/spinnerprocat"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="?attr/colorPrimary"
+                        android:textSize="@dimen/edit_text_size"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp">
+                    <RadioGroup
+                        android:id="@+id/radioproductType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="50dp"
+                        >
+                        <RadioButton android:id="@+id/radio_egg"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="@string/egg"
+                            android:checked="true"
+                            />
+                        <RadioButton android:id="@+id/radio_eggless"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:text="@string/eggless"
+
+                            />
+                    </RadioGroup>
+                </LinearLayout>
+
+
+
+                <EditText
+                    android:id="@+id/edtProductDesc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"/>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/btnCancle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:background="?attr/colorAccent"
+                    android:padding="@dimen/nav_header_vertical_spacing"
+                    android:text="Cancel"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/button_size" />
+
+                <Button
+                    android:id="@+id/btnSubmit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:background="?attr/colorPrimaryDark"
+                    android:padding="@dimen/nav_header_vertical_spacing"
+                    android:text="Submit"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/button_size" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

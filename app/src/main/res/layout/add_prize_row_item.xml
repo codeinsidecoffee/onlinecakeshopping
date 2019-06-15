@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/addproductitem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:padding="10dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="45dp">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarStyle="outsideOverlay">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Please Select Product Type"
+                android:textColor="@color/colorAdminPrimary"
+                android:textStyle="bold"
+                android:textSize="@dimen/category_text_size"
+                android:textAlignment="center"/>
+            <RadioGroup
+                android:id="@+id/radioproductprizeType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                >
+                <RadioButton android:id="@+id/radio_eggprize"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/egg"
+                    android:checked="true"
+                    />
+                <RadioButton android:id="@+id/radio_egglessprize"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:text="@string/eggless"
+
+                    />
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="vertical">
+                <Spinner
+                    android:id="@+id/spinnercategoryprize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/edit_text_size" />
+                <Spinner
+                    android:id="@+id/spinnerproductprize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/edit_text_size" />
+                <Spinner
+                    android:id="@+id/spinnerqtyTypeprize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:padding="10dp"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/edit_text_size"
+                   />
+
+                <EditText
+                    android:id="@+id/edtproductprize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:hint="Enter Product Prize"
+                    android:inputType="numberDecimal"
+                    android:padding="10dp"
+                    android:textColor="?attr/colorPrimary"
+                    android:textSize="@dimen/edit_text_size" />
+
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btnCanclePrize"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:background="?attr/colorAccent"
+                    android:padding="@dimen/nav_header_vertical_spacing"
+                    android:text="Cancel"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/button_size" />
+
+                <Button
+                    android:id="@+id/btnAddPrize"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:layout_weight="0.5"
+                    android:background="?attr/colorPrimaryDark"
+                    android:padding="@dimen/nav_header_vertical_spacing"
+                    android:text="Submit"
+                    android:textColor="#fff"
+                    android:textSize="@dimen/button_size" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

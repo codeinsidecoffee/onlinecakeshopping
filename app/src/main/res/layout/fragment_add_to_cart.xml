@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".usermodule.Fragment.AddToCartFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarStyle="outsideOverlay">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cartRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/totlaOrderRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+        <Button
+            android:id="@+id/btnshopcontinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shop Continue"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:background="@color/colorAccent"
+            android:textSize="@dimen/product_text_size"
+            android:padding="10dp"
+            android:layout_margin="10dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

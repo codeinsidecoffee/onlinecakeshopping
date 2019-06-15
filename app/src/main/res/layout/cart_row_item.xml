@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/imgProduct"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="0.3"
+                android:src="@mipmap/app_icon"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="80dp"
+                android:layout_weight="0.7"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/txtProductName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5Star ChocoLava Cake"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorAdminPrimaryDark"
+                    android:textSize="@dimen/product_price_size"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5">
+                        <TextView
+                            android:id="@+id/txtCategory"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Cake Category"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAdminPrimary"
+                            android:textSize="@dimen/textbox_size"/>
+                        <TextView
+                            android:id="@+id/txtProductType"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Egg Cake"
+                            android:textColor="@color/textColor"
+                            android:textSize="@dimen/textbox_size"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_weight="0.5"
+                        android:gravity="center">
+                        <TextView
+                            android:id="@+id/txtProductPrice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="350 RS/-"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorAccent"
+                            android:textSize="@dimen/product_price_size"
+                            android:textAlignment="center"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Qty : "
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/product_text_size"/>
+            <TextView
+                android:id="@+id/txtTotalUnit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/product_text_size"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="weight : "
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/product_text_size"/>
+            <TextView
+                android:id="@+id/txtProductQtyType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.5 KG"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/product_text_size"
+                android:paddingRight="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Unit Rate : "
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/product_text_size"/>
+            <TextView
+                android:id="@+id/txtUnitRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="350 Rs/-"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/product_text_size"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Delivered on : "
+                android:textStyle="bold"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/product_text_size"/>
+            <TextView
+                android:id="@+id/txtDeliveryDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Date "
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/product_text_size"/>
+            <TextView
+                android:id="@+id/txtdeliveryTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Time "
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/product_text_size"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp">
+
+            <ImageView
+                android:id="@+id/imgeditcart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:src="@drawable/ic_mode_edit"/>
+            <ImageView
+                android:id="@+id/imgdeletecart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textStyle="bold"
+                android:src="@drawable/ic_delete"/>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
